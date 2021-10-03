@@ -29,7 +29,7 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
  > - **GET** `/users`
 
-   *note : can only be accessed by admin*
+   *note : hanya bisa di akses oleh admin*
 
       Users GET berfungsi untuk menampilkan semua data users 
    
@@ -37,7 +37,7 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **GET** `/users/:id`
 
-   *note : users cannot access other users*
+   *note : users hanya bisa mengakses datanya sendiri*
 
       Users GET berfungsi untuk menampilkan data detail users hanya dirinya saja 
         
@@ -45,7 +45,7 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **PATCH** `/users/:id`
 
-   *note : only user can create and update, admin can't do it*
+   *note : hanya users yang dapat membuat dan update infromation, selain users tidak bisa*
 
       Users PATCH berfungsi untuk melakukan update data users
 
@@ -68,21 +68,21 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **GET** `/motorcycles`
 
-   *note : can be accessed by admin and users*
+   *note : hanya bisa di akses oleh admin dan users*
 
       Motorcycles GET berfungsi untuk menampilkan semua data yang berada di dalam data motorcycles
 <br>
 
 > - **GET** `/motorcycles/:id`
 
-   *note : can be accessed by admin and users*
+   *note : hanya bisa di akses oleh admin dan users*
 
       Motorcycles GET berfungsi untuk menampilkan data detail yang berada di motorcycles sesuai dengan id 
 <br>
 
 > - **POST** `/motorcycles`
 
-   *note : can do it only by admin* 
+   *note : hanya bisa dilakukan oleh admin* 
 
       POST Body :
       1. motorName
@@ -97,14 +97,14 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **PATCH** `/motorcycles/:id`
 
-   *note : can do it only by admin*
+   *note : hanya bisa di lakukan oleh admin*
 
     Motorcycles PATCH berfungsi untuk melakukan update koleksi motor
 <br>
 
 > - **DELETE** `/motorcycles/:id`
 
-   *note : can do it only by admin*
+   *note : hanya bisa di lakukan oleh admin*
 
     Motorcycles DELETE berfungsi untuk  meghapus koleksi motor yang berada di motorcycles
 <br>
@@ -113,14 +113,14 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **GET** `/engines`
 
-   *note : can be accessed by admin and users*
+   *note : hanya bisa di akses oleh users dan admin*
 
     Engines GET berfungsi untuk menampilkan semua data yang ada di Engines
 <br>
 
 > - **POST** `/engines`
 
-   *note : can do it only by admin*
+   *note : hanya bisa di lakukan oleh admin*
 
     Post body terdapat : 
     1. transmission
@@ -131,21 +131,21 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **GET** `/engines/:id`
 
-   *note : can be accessed by admin and users*
+   *note : hanya bisa di akses oleh admin dan users*
 
     Engines GET berfungsi untuk menampilkan data detail yang ada di Engines
 <br>
 
 > - **PATCH** `/engines/:id`
 
-   *note : can be accessed by admin and users*
+   *note : hanya bisa di lakukan oleh admin*
 
     Engines PATCH berfungsi untuk melakukan update data informasi engines
 <br>
 
 > - **DELETE** `/engines/:id`
 
-   *note : can be accessed by admin and users*
+   *note : hanya bisa di lakukan oleh admin*
 
     Engines DELETE berfungsi untuk menghapus/delete informasi data engines
 <br>
@@ -154,14 +154,14 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **GET** `/factories`
 
-   *note : can be accessed by admin and users*
+   *note : hanya bisa di akses oleh admin dan users*
 
     Factories GET berfungsi untuk menampilkan semua informasi data dari factories 
 <br>
 
 > - **POST** `/factories`
 
-   *note : can do it only by admin*
+   *note : hanya bisa di lakukan oleh admin*
 
     POST Body :
     1. nameFactory
@@ -174,21 +174,21 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **GET** `/factories/:id`
 
-   *note : can be accessed by admin and users*
+   *note : bisa di akses oleh admin dan users*
 
     Factories GET berfungsi untuk menampilkan informasi data secara spesifik yang berada di factories dengan menggunakan id
 <br>
 
 > - **PATCH** `/factories/:id`
 
-   *note : can do it only by admin*
+   *note : hanya bisa di lakukan oleh admin*
 
     Factories PATCH berfungsi untuk update informasi data yang berada di factories
 <br>
 
 > - **DELETE** `/factories/:id`
 
-   *note : can do it only by admin*
+   *note : hanya bisa di lakukan oleh admin*
 
     Factories DELETE berfungsi untuk mengahapus informasi data yang berada di factories
 <br>
@@ -197,21 +197,21 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **GET** `/type`
 
-   *note : can be accessed by admin and users*
+   *note : hanya bisa akses oleh admin dan users*
 
     Types GET berfungsi untuk menampilkan semua data yang berada di Types
 <br>
 
 > - **GET** `/tpye/:id`
 
-   *note : can be accessed by admin and users*
+   *note : hanya bisa akses oleh admin dan users*
 
     Types GET berfungsi untuk menampilkan data detail yang berada di Types
 <br>
 
 > - **POST** `/type/:id`
 
-   *note : can do it only by admin*
+   *note : hanya bisa dilakukan oleh admin*
 
     POST Body :
     1. Name
@@ -222,13 +222,13 @@ Motorans adalah REST API yang digunakan untuk mencatatat koleksi motor User deng
 
 > - **PATCH** `/type/:id`
 
-   *note : can do it only by admin*
+   *note : hanya bisa dilakukan oleh admin*
 
     Types PATCH berfungsi untuk melakukan update data yang berada di Types 
 <br>
 
 > - **DELETE** `/type/:id`
 
-   *note : can do it only by admin*
+   *note : hanya bisa dilakukan oleh admin*
 
     Types DELETE berfungsi untuk menghapus/delete data yang berada Types
